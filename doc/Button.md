@@ -9,7 +9,10 @@ var {
   View,
 } = React;
 
-import {Button} from ('rct-native-components');
+var Compnents = require('rct-native-components');
+var {
+  Button
+} = Compnents;
 
 var example = React.createClass({
   render: function() {

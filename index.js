@@ -4,13 +4,15 @@ var Spinner = require('./lib/Spinner');
 var Slider = require('./lib/Slider');
 var ModalBox = require('./lib/ModalBox');
 var Button = require('./lib/Button');
+var RadioButton = require('./lib/RadioButton');
 
 
 module.exports = {
-  ProgressBar: ProgressBar,
-  Spinner: Spinner,
-  TopBar: TopBar,
-  Slider: Slider,
-  ModalBox: ModalBox,
-  Button: Button
+  ProgressBar,
+  Spinner,
+  TopBar,
+  Slider,
+  ModalBox,
+  Button,
+  RadioButton
 }

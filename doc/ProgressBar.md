@@ -8,7 +8,11 @@ var {
   Text,
   View,
 } = React;
-import {ProgressBar} = from 'rct-native-components';
+
+var Compnents = require('rct-native-components');
+var {
+  ProgressBar
+} = Compnents;
 
 var rnsandbox = React.createClass({
 
