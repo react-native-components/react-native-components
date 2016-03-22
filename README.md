@@ -10,21 +10,14 @@ npm i rct-native-components --save
 ### Examples
 ```js
 var React = require('react-native');
-var Compnents = require('rct-native-components');
-
 var {
   AppRegistry,
   StyleSheet,
   Text,
   View,
 } = React;
-
-var {
-  ProgressBar, 
-  Button, 
-  Slider, 
-  TopBar
-} = Compnents;
+var Compnents = require('rct-native-components');
+var {ProgressBar, Button, Slider, TopBar, Spinner} = Compnents;
 
 var rnsandbox = React.createClass({
 
@@ -44,10 +37,17 @@ var rnsandbox = React.createClass({
       <View style={styles.container}>
         <TopBar title="Demo" backFunc={()=>{}} actionName="Settings"/>
         <View style={styles.wrapper}>
+          <Spinner max={10}
+            min={1}
+            default={5}
+            color="#3F51B5"
+            numColor="#3F51B5"
+            onNumChange={(num)=>{console.log(num)}}/>
+
           <Button 
             rippleColor='rgba(255, 255, 255, 0.1)' 
             onClick = {() => {this.increase()}}
-            style={{marginBottom: 10, padding: 15, backgroundColor: '#3F51B5'}}>
+            style={{marginTop: 20, marginBottom: 10, padding: 15, backgroundColor: '#3F51B5'}}>
             <Text style={{color: '#FFF'}}>{'Touch Me'}</Text>
           </Button>
 
@@ -87,3 +87,6 @@ var styles = StyleSheet.create({
 
 AppRegistry.registerComponent('rnsandbox', () => rnsandbox);
 ```
+
+### Screencasts
+![ios](https://github.com/react-native-components/react-native-components/blob/master/screencasts/ios.demo.gif)
