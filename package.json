@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/react-native-components/react-native-components.git"
   },
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "A cross platform components repository for React Native",
   "main": "index.js",
   "author": "genie <genie88@163.com> (http://genie88.github.io)",
@@ -12,5 +12,8 @@
     "react",
     "native",
     "react-native"
-  ]
+  ],
+  "dependencies": {
+    "react-native-vector-icons": "*"
+  }
 }

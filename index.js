@@ -7,6 +7,7 @@ var Button = require('./lib/Button');
 var Input = require('./lib/Input');
 var Switch = require('./lib/Switch');
 var RadioButton = require('./lib/RadioButton');
+var Drawer = require('./lib/Drawer');
 
 
 module.exports = {
@@ -18,5 +19,6 @@ module.exports = {
   Button,
   Input,
   Switch,
-  RadioButton
+  RadioButton,
+  Drawer
 }
